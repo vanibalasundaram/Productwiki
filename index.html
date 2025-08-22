@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product team - Build the right thing, the right way</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=DM+Sans:wght@400&family=Epilogue:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0d39d8">
+    <meta name="description" content="Your centralised hub for product information, documentation, and resources to help teams collaborate effectively and create exceptional products.">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Product team - Build the right thing, the right way">
+    <meta property="og:description" content="Your centralised hub for product information, documentation, and resources to help teams collaborate effectively.">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="Product team">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Product team - Build the right thing, the right way">
+    <meta name="twitter:description" content="Your centralised hub for product information, documentation, and resources to help teams collaborate effectively.">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="company-logo">
+                <div class="logo-image">
+                    <svg width="60" height="32" viewBox="0 0 60 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="60" height="32" fill="url(#pattern0_1099_6022)"/>
+                        <defs>
+                            <pattern id="pattern0_1099_6022" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_1099_6022" transform="matrix(0.00241327 0 0 0.00452489 -0.00678733 0)"/>
+                            </pattern>
+                            <image id="image0_1099_6022" width="420" height="221" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h1 class="company-name">Product team</h1>
+                </div>
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <nav class="main-navigation" id="mainNavigation">
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="/" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item has-dropdown">
+                            <a href="about.html" class="nav-link dropdown-toggle">About Us</a>
+                            <div class="mega-menu">
+                                <div class="mega-menu-content">
+                                    <div class="mega-menu-section">
+                                        <h3>Company</h3>
+                                        <ul>
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="about.html#mission">Our Mission</a></li>
+                                            <li><a href="about.html#team">Meet the Team</a></li>
+                                            <li><a href="about.html#careers">Careers</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-section">
+                                        <h3>Resources</h3>
+                                        <ul>
+                                            <li><a href="#recent-updates">Product Updates</a></li>
+                                            <li><a href="https://doctoranywhere.atlassian.net/jira/polaris/projects/DBP/ideas/view/4174693" target="_blank">Roadmap</a></li>
+                                            <li><a href="https://doctoranywhere.atlassian.net/wiki/spaces/PD/pages/3168535508" target="_blank">Gallery</a></li>
+                                            <li><a href="https://doctoranywhere.atlassian.net/wiki/spaces/PD/overview" target="_blank">Documentation</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-section">
+                                        <h3>Contact</h3>
+                                        <ul>
+                                            <li><a href="https://doctoranywhere.atlassian.net/servicedesk/customer/portal/12" target="_blank">Product Request</a></li>
+                                            <li><a href="https://doctoranywhere.atlassian.net/servicedesk/customer/portal/12/group/33/create/402" target="_blank">Design Team</a></li>
+                                            <li><a href="#cta">Get Support</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item has-dropdown">
+                            <a href="release.html" class="nav-link dropdown-toggle">Release</a>
+                            <div class="mega-menu release-menu">
+                                <div class="mega-menu-content">
+                                    <div class="mega-menu-section">
+                                        <h3>Latest Updates</h3>
+                                        <ul>
+                                            <li><a href="release.html">Release Notes</a></li>
+                                            <li><a href="release.html#version-history">Version History</a></li>
+                                            <li><a href="release.html#whats-new">What's New</a></li>
+                                            <li><a href="release.html#upcoming">Coming Soon</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-section">
+                                        <h3>Features</h3>
+                                        <ul>
+                                            <li><a href="release.html#mobile-app">Mobile App Updates</a></li>
+                                            <li><a href="release.html#dashboard">Dashboard Improvements</a></li>
+                                            <li><a href="release.html#api">API Enhancements</a></li>
+                                            <li><a href="release.html#security">Security Updates</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-section">
+                                        <h3>Resources</h3>
+                                        <ul>
+                                            <li><a href="release.html#migration">Migration Guide</a></li>
+                                            <li><a href="release.html#changelog">Full Changelog</a></li>
+                                            <li><a href="https://doctoranywhere.atlassian.net/wiki/spaces/PD/overview" target="_blank">Documentation</a></li>
+                                            <li><a href="#recent-updates">Product Updates</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://doctoranywhere.atlassian.net/jira/polaris/projects/DBP/ideas/view/4174693" class="nav-link" target="_blank">Roadmap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://doctoranywhere.atlassian.net/wiki/spaces/PD/pages/3168535508" class="nav-link" target="_blank">Gallery</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Mobile Menu Items (Simplified) -->
+                    <div class="mobile-menu-items">
+                        <a href="/" class="mobile-nav-link active">🏠 Home</a>
+                        <div class="mobile-nav-group">
+                            <span class="mobile-nav-title">👥 About Us</span>
+                            <a href="about.html" class="mobile-nav-link">About Us</a>
+                            <a href="about.html#mission" class="mobile-nav-link">Our Mission</a>
+                            <a href="about.html#team" class="mobile-nav-link">Meet the Team</a>
+                            <a href="about.html#careers" class="mobile-nav-link">Careers</a>
+                        </div>
+                        <div class="mobile-nav-group">
+                            <span class="mobile-nav-title">🚀 Release</span>
+                            <a href="release.html" class="mobile-nav-link">Release Notes</a>
+                            <a href="release.html#whats-new" class="mobile-nav-link">What's New</a>
+                            <a href="release.html#upcoming" class="mobile-nav-link">Coming Soon</a>
+                        </div>
+                        <a href="https://doctoranywhere.atlassian.net/jira/polaris/projects/DBP/ideas/view/4174693" class="mobile-nav-link" target="_blank">🗺️ Roadmap</a>
+                        <a href="https://doctoranywhere.atlassian.net/wiki/spaces/PD/pages/3168535508" class="mobile-nav-link" target="_blank">🎨 Gallery</a>
+                        <div class="mobile-nav-divider"></div>
+                        <a href="https://doctoranywhere.atlassian.net/servicedesk/customer/portal/12" class="mobile-nav-link" target="_blank">📝 Product Request</a>
+                        <a href="https://doctoranywhere.atlassian.net/wiki/spaces/PD/overview" class="mobile-nav-link" target="_blank">📚 Documentation</a>
+                    </div>
+                </nav>
+                <div class="header-buttons">
+                    <a href="https://doctoranywhere.atlassian.net/servicedesk/customer/portal/12" class="btn-secondary" target="_blank">
+                        Send Product Request
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <div class="hero-logo">
+                            <svg width="60" height="32" viewBox="0 0 60 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="60" height="32" fill="url(#pattern0_1099_6514)"/>
+                                <defs>
+                                    <pattern id="pattern0_1099_6514" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_1099_6514" transform="matrix(0.00241327 0 0 0.00452489 -0.00678733 0)"/>
+                                    </pattern>
+                                    <image id="image0_1099_6514" width="420" height="221" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h2 class="hero-title">Build the right thing, the right way</h2>
+                            <p class="hero-description">
+                                Your centralised hub for product information, documentation, and resources to help teams collaborate 
+                                effectively and create exceptional products.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Product Updates Banner -->
+            <section class="product-updates-banner">
+                <div class="updates-container">
+                    <h3 class="updates-title">🗞️ June 2025 Product Updates</h3>
+                    <div class="updates-grid">
+                        <div class="update-item">
+                            <span class="update-label">Lightpunkt Chance - List & Comment</span>
+                            <span class="update-badge completed">Completed</span>
+                        </div>
+                        <div class="update-item">
+                            <span class="update-label">More Savings on Bug Quantity per transaction</span>
+                            <span class="update-badge in-progress">In progress</span>
+                        </div>
+                        <div class="update-item">
+                            <span class="update-label">Digest of education</span>
+                            <span class="update-badge completed">Completed</span>
+                        </div>
+                        <div class="update-item">
+                            <span class="update-label">Help Sought For Tip</span>
+                            <span class="update-badge completed">Completed</span>
+                        </div>
+                        <div class="update-item">
+                            <span class="update-label">SMS Engine</span>
+                            <span class="update-badge completed">Completed</span>
+                        </div>
+                        <div class="update-item">
+                            <span class="update-label">Migration complete API: C</span>
+                            <span class="update-badge completed">Completed</span>
+                        </div>
+                    </div>
+                    <a href="#" class="view-all-link">View all updates →</a>
+                </div>
+            </section>
+
+            <!-- Quick Links Section -->
+            <section class="quick-links-section">
+                <div class="container">
+                    <h3 class="section-title">Quick links</h3>
+                    
+                    <!-- First Time Here Card -->
+                    <div class="first-time-card">
+                        <div class="card-icon new-icon">
+                            <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                                <rect width="56" height="56" rx="12" fill="#f0f0f0"/>
+                                <path d="M28 20V36M20 28H36" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="card-content">
+                            <h4 class="card-title">First time here?</h4>
+                            <p class="card-description">
+                                Welcome! Start with our Explorer Guide to learn how we work, what tools we use, and where to 
+                                find what you need.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Service Cards Grid -->
+                    <div class="service-cards-grid">
+                        <!-- Product Request Card -->
+                        <div class="service-card">
+                            <div class="card-icon">
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                                    <rect width="56" height="56" rx="12" fill="#f0f0f0"/>
+                                    <path d="M20 24H36M20 32H28" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+                                    <rect x="16" y="16" width="24" height="24" rx="2" stroke="#000" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="card-header">
+                                <h4 class="card-title">Product Request</h4>
+                                <p class="card-description">Submit issues or bugs that need immediate attention</p>
+                            </div>
+                            <a href="https://doctoranywhere.atlassian.net/servicedesk/customer/portal/12" class="btn-secondary" target="_blank">
+                                Send Request
+                            </a>
+                        </div>
+
+                        <!-- Product Roadmap Card -->
+                        <div class="service-card">
+                            <div class="card-icon">
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                                    <rect width="56" height="56" rx="12" fill="#f0f0f0"/>
+                                    <path d="M16 20H40V36H16V20Z" stroke="#000" stroke-width="2"/>
+                                    <path d="M20 24H24M20 28H32M20 32H28" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="card-header">
+                                <h4 class="card-title">Product Roadmap</h4>
+                                <p class="card-description">View upcoming features and development timelines</p>
+                            </div>
+                            <a href="https://doctoranywhere.atlassian.net/jira/polaris/projects/DBP/ideas/view/4174693" class="btn-secondary" target="_blank">
+                                View Roadmap
+                            </a>
+                        </div>
+
+                        <!-- Figma Assets Card -->
+                        <div class="service-card">
+                            <div class="card-icon">
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                                    <rect width="56" height="56" rx="12" fill="#f0f0f0"/>
+                                    <circle cx="22" cy="22" r="6" stroke="#000" stroke-width="2"/>
+                                    <circle cx="34" cy="22" r="6" stroke="#000" stroke-width="2"/>
+                                    <circle cx="28" cy="34" r="6" stroke="#000" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="card-header">
+                                <h4 class="card-title">Figma Assets</h4>
+                                <p class="card-description">Access design files, templates, and component libraries.</p>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/1Ypy2jnOi5TJ06CVS3ux6K41Tx1a68-W2" class="btn-secondary" target="_blank">
+                                Download Assets
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recent Product Updates Section -->
+            <section class="recent-updates-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h3 class="section-title">Recent Product updates</h3>
+                    </div>
+                    
+                    <div class="updates-grid-layout">
+                        <!-- Left Column -->
+                        <div class="updates-column">
+                            <!-- Latest TL;Dr Card -->
+                            <a href="https://doctoranywhere.atlassian.net/wiki/spaces/PD/pages/3812458497/TL+DR+-+June+2025" class="update-card tldr-card" target="_blank">
+                                <div class="card-content">
+                                    <h4 class="card-title">Latest TL;Dr Jun 2025</h4>
+                                    <p class="card-description">What has happened in the past few months? Check here</p>
+                                </div>
+                                <div class="card-illustration">
+                                    <div class="floating-elements">
+                                        <div class="element element-1"></div>
+                                        <div class="element element-2"></div>
+                                        <div class="element element-3"></div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Product Sharing Sessions Card -->
+                            <a href="https://doctoranywhere.atlassian.net/wiki/spaces/PD/pages/2844590138" class="update-card sharing-card" target="_blank">
+                                <div class="card-content">
+                                    <h4 class="card-title">Product Sharing sessions</h4>
+                                    <p class="card-description">Want to know more about Product? Join our sharing sessions</p>
+                                </div>
+                                <div class="card-illustration-large">
+                                    <div class="person-illustration"></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Right Column -->
+                        <div class="updates-column">
+                            <!-- OKR Targets Card -->
+                            <a href="https://doctoranywhere.atlassian.net/wiki/spaces/PD/pages/3576463871" class="update-card targets-card" target="_blank">
+                                <div class="card-content">
+                                    <h4 class="card-title">What are our targets?</h4>
+                                    <p class="card-description">Check our 2025 OKR targets</p>
+                                </div>
+                                <div class="card-chart">
+                                    <div class="chart-visualization">
+                                        <div class="chart-bars">
+                                            <div class="bar bar-1"></div>
+                                            <div class="bar bar-2"></div>
+                                            <div class="bar bar-3"></div>
+                                            <div class="bar bar-4"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="section-actions">
+                        <a href="https://doctoranywhere.atlassian.net/wiki/spaces/PD/overview#%F0%9F%86%97-Already-onboarded%3F" class="btn-primary" target="_blank">
+                            Read more
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Behind the Scenes Gallery -->
+            <section class="gallery-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h3 class="section-title">Behind the Scenes</h3>
+                        <p class="section-subtitle">Celebrating milestones, big and small.</p>
+                    </div>
+                    
+                    <div class="gallery-grid">
+                        <div class="gallery-column">
+                            <div class="gallery-item tall">
+                                <div class="gallery-image"></div>
+                            </div>
+                            <div class="gallery-item medium">
+                                <div class="gallery-image"></div>
+                            </div>
+                        </div>
+                        <div class="gallery-column">
+                            <div class="gallery-item small">
+                                <div class="gallery-image"></div>
+                            </div>
+                            <div class="gallery-item medium">
+                                <div class="gallery-image"></div>
+                            </div>
+                            <div class="gallery-item small">
+                                <div class="gallery-image"></div>
+                            </div>
+                        </div>
+                        <div class="gallery-column">
+                            <div class="gallery-item medium">
+                                <div class="gallery-image"></div>
+                            </div>
+                            <div class="gallery-item tall">
+                                <div class="gallery-image"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-actions">
+                        <a href="https://doctoranywhere.atlassian.net/wiki/spaces/PD/overview#%F0%9F%86%97-Already-onboarded%3F" class="btn-secondary" target="_blank">
+                            View our Gallery
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Product Roadmap Hero -->
+            <section class="roadmap-hero">
+                <div class="roadmap-container">
+                    <div class="roadmap-content">
+                        <h3 class="roadmap-title">Our Product Roadmap</h3>
+                        <p class="roadmap-description">
+                            Track what we're working on now, what's planned, and where we're heading next.
+                        </p>
+                        <div class="roadmap-actions">
+                            <a href="https://doctoranywhere.atlassian.net/jira/polaris/projects/DBP/ideas/view/4174693" class="btn-primary" target="_blank">
+                                See what's cooking?
+                            </a>
+                        </div>
+                    </div>
+                    <div class="roadmap-preview">
+                        <div class="device-frame">
+                            <div class="device-content">
+                                <div class="spreadsheet-mockup">
+                                    <div class="spreadsheet-header"></div>
+                                    <div class="spreadsheet-rows">
+                                        <div class="row"></div>
+                                        <div class="row"></div>
+                                        <div class="row"></div>
+                                        <div class="row"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action Section -->
+            <section class="cta-section">
+                <div class="container">
+                    <div class="cta-card">
+                        <div class="cta-content">
+                            <h3 class="cta-title">Need something specific?</h3>
+                            <p class="cta-description">Can't find what you're looking for? Our product team is here to help you succeed.</p>
+                        </div>
+                        <div class="cta-actions">
+                            <a href="https://doctoranywhere.atlassian.net/servicedesk/customer/portal/12" class="btn-primary" target="_blank">
+                                Send Product request
+                            </a>
+                            <a href="https://doctoranywhere.atlassian.net/servicedesk/customer/portal/12/group/33/create/402" class="btn-secondary" target="_blank">
+                                Reach out Design team
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                new ProductTeamWiki();
+            });
+        </script>
+    </body>
+</html>

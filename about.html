@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Product team</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=DM+Sans:wght@400&family=Epilogue:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0d39d8">
+    <meta name="description" content="Learn about our product team's mission to build the right thing, the right way. Meet our team and discover our journey.">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About Us - Product team">
+    <meta property="og:description" content="Learn about our product team's mission to build the right thing, the right way.">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="Product team">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Us - Product team">
+    <meta name="twitter:description" content="Learn about our product team's mission to build the right thing, the right way.">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="company-logo">
+                <div class="logo-image">
+                    <img src="assets/logo.png" alt="Company Logo" width="60" height="32">
+                </div>
+                <h1 class="company-name">Product team</h1>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <nav class="main-navigation" id="mainNavigation">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="about.html" class="nav-link dropdown-toggle active">About Us</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-section">
+                                    <h3>Company</h3>
+                                    <ul>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="#mission">Our Mission</a></li>
+                                        <li><a href="#team">Meet the Team</a></li>
+                                        <li><a href="#careers">Careers</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-section">
+                                    <h3>Resources</h3>
+                                    <ul>
+                                        <li><a href="index.html#recent-updates">Product Updates</a></li>
+                                        <li><a href="https://doctoranywhere.atlassian.net/jira/polaris/projects/DBP/ideas/view/4174693" target="_blank">Roadmap</a></li>
+                                        <li><a href="https://doctoranywhere.atlassian.net/wiki/spaces/PD/pages/3168535508" target="_blank">Gallery</a></li>
+                                        <li><a href="https://doctoranywhere.atlassian.net/wiki/spaces/PD/overview" target="_blank">Documentation</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-section">
+                                    <h3>Contact</h3>
+                                    <ul>
+                                        <li><a href="https://doctoranywhere.atlassian.net/servicedesk/customer/portal/12" target="_blank">Product Request</a></li>
+                                        <li><a href="https://doctoranywhere.atlassian.net/servicedesk/customer/portal/12/group/33/create/402" target="_blank">Design Team</a></li>
+                                        <li><a href="index.html#cta">Get Support</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="release.html" class="nav-link dropdown-toggle">Release</a>
+                        <div class="mega-menu release-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-section">
+                                    <h3>Latest Updates</h3>
+                                    <ul>
+                                        <li><a href="release.html">Release Notes</a></li>
+                                        <li><a href="release.html#version-history">Version History</a></li>
+                                        <li><a href="release.html#whats-new">What's New</a></li>
+                                        <li><a href="release.html#upcoming">Coming Soon</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-section">
+                                    <h3>Features</h3>
+                                    <ul>
+                                        <li><a href="release.html#mobile-app">Mobile App Updates</a></li>
+                                        <li><a href="release.html#dashboard">Dashboard Improvements</a></li>
+                                        <li><a href="release.html#api">API Enhancements</a></li>
+                                        <li><a href="release.html#security">Security Updates</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-section">
+                                    <h3>Resources</h3>
+                                    <ul>
+                                        <li><a href="release.html#migration">Migration Guide</a></li>
+                                        <li><a href="release.html#changelog">Full Changelog</a></li>
+                                        <li><a href="https://doctoranywhere.atlassian.net/wiki/spaces/PD/overview" target="_blank">Documentation</a></li>
+                                        <li><a href="index.html#recent-updates">Product Updates</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://doctoranywhere.atlassian.net/jira/polaris/projects/DBP/ideas/view/4174693" class="nav-link" target="_blank">Roadmap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://doctoranywhere.atlassian.net/wiki/spaces/PD/pages/3168535508" class="nav-link" target="_blank">Gallery</a>
+                    </li>
+                </ul>
+                
+                <!-- Mobile Menu Items (Simplified) -->
+                <div class="mobile-menu-items">
+                    <a href="index.html" class="mobile-nav-link">🏠 Home</a>
+                    <div class="mobile-nav-group">
+                        <span class="mobile-nav-title">👥 About Us</span>
+                        <a href="about.html" class="mobile-nav-link active">About Us</a>
+                        <a href="#mission" class="mobile-nav-link">Our Mission</a>
+                        <a href="#team" class="mobile-nav-link">Meet the Team</a>
+                        <a href="#careers" class="mobile-nav-link">Careers</a>
+                    </div>
+                    <div class="mobile-nav-group">
+                        <span class="mobile-nav-title">🚀 Release</span>
+                        <a href="release.html" class="mobile-nav-link">Release Notes</a>
+                        <a href="release.html#whats-new" class="mobile-nav-link">What's New</a>
+                        <a href="release.html#upcoming" class="mobile-nav-link">Coming Soon</a>
+                    </div>
+                    <a href="https://doctoranywhere.atlassian.net/jira/polaris/projects/DBP/ideas/view/4174693" class="mobile-nav-link" target="_blank">🗺️ Roadmap</a>
+                    <a href="https://doctoranywhere.atlassian.net/wiki/spaces/PD/pages/3168535508" class="mobile-nav-link" target="_blank">🎨 Gallery</a>
+                    <div class="mobile-nav-divider"></div>
+                    <a href="https://doctoranywhere.atlassian.net/servicedesk/customer/portal/12" class="mobile-nav-link" target="_blank">📝 Product Request</a>
+                    <a href="https://doctoranywhere.atlassian.net/wiki/spaces/PD/overview" class="mobile-nav-link" target="_blank">📚 Documentation</a>
+                </div>
+            </nav>
+            <div class="header-buttons">
+                <a href="https://doctoranywhere.atlassian.net/servicedesk/customer/portal/12" class="btn-secondary" target="_blank">
+                    Send Product Request
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- About Hero Section -->
+        <section id="mission" class="about-hero">
+            <div class="hero-container">
+                <div class="about-hero-content">
+                    <div class="hero-logo">
+                        <img src="assets/logo.png" alt="Company Logo" width="60" height="32">
+                    </div>
+                    <h1 class="about-title">About Us</h1>
+                    <h2 class="mission-statement">Our mission is to accelerate the development of exceptional products</h2>
+                    <p class="mission-description">
+                        Better collaboration leads to more performant teams. Performant teams lead to faster delivery. 
+                        We help deliver value from product investments faster with better processes by providing an 
+                        end-to-end solution to manage the entire product lifecycle.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Stats Section -->
+        <section class="company-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item headquarters">
+                        <div class="stat-icon">🏢</div>
+                        <div class="stat-content">
+                            <div class="stat-label">headquarters</div>
+                            <div class="stat-value">Singapore</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-content">
+                            <div class="stat-value">50+</div>
+                            <div class="stat-label">Team Members</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-content">
+                            <div class="stat-value">2020</div>
+                            <div class="stat-label">Founded</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-content">
+                            <div class="stat-value">100M+</div>
+                            <div class="stat-label">Users Served</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-content">
+                            <div class="stat-value">500+</div>
+                            <div class="stat-label">Features Delivered</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-content">
+                            <div class="stat-value">24/7</div>
+                            <div class="stat-label">Support Coverage</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="company-mission-card">
+                    <p class="mission-card-text">
+                        We are proud to be trusted by leading companies to provide a product-centric, end-to-end solution 
+                        to manage the entire product lifecycle. Combining cutting edge technology with operational excellence, 
+                        we help teams develop the highest-quality products because better process → better products
+                    </p>
+                    <a href="/" class="btn-secondary">Meet our customers →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="news-section">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="section-title">Product Team In The News</h3>
+                </div>
+                
+                <div class="news-grid">
+                    <article class="news-item">
+                        <div class="news-content">
+                            <div class="news-date">March 2025</div>
+                            <h4 class="news-title">Revolutionary Product Development Framework Launched</h4>
+                            <p class="news-excerpt">Our team introduces innovative methodologies that reduce time-to-market by 40%.</p>
+                            <a href="#" class="news-link">Read more →</a>
+                        </div>
+                    </article>
+                    
+                    <article class="news-item">
+                        <div class="news-content">
+                            <div class="news-date">February 2025</div>
+                            <h4 class="news-title">Award for Excellence in Product Innovation</h4>
+                            <p class="news-excerpt">Recognized by industry leaders for outstanding contribution to product excellence.</p>
+                            <a href="#" class="news-link">Read more →</a>
+                        </div>
+                    </article>
+                    
+                    <article class="news-item">
+                        <div class="news-content">
+                            <div class="news-date">January 2025</div>
+                            <h4 class="news-title">Global Expansion and Team Growth</h4>
+                            <p class="news-excerpt">Opening new offices and expanding our talented product team across continents.</p>
+                            <a href="#" class="news-link">Read more →</a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="news-contact">
+                    <p>Get In Touch With Our Team By Emailing: <a href="mailto:product@company.com">product@company.com</a> →</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="team-section">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="section-title">Meet the Team</h3>
+                    <p class="section-description">The passionate individuals behind our product excellence</p>
+                </div>
+                
+                <div class="team-grid">
+                    <div class="team-member-card">
+                        <div class="member-avatar">
+                            <div class="avatar-placeholder">👨‍💼</div>
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Alex Chen</h4>
+                            <p class="member-role">Head of Product</p>
+                            <p class="member-bio">Leading product strategy and vision with 10+ years of experience in building scalable products.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member-card">
+                        <div class="member-avatar">
+                            <div class="avatar-placeholder">👩‍💻</div>
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Sarah Rodriguez</h4>
+                            <p class="member-role">Senior Product Manager</p>
+                            <p class="member-bio">Expert in user experience and data-driven product decisions with a focus on customer success.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member-card">
+                        <div class="member-avatar">
+                            <div class="avatar-placeholder">👨‍🎨</div>
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">David Kim</h4>
+                            <p class="member-role">Lead Product Designer</p>
+                            <p class="member-bio">Creating intuitive and beautiful user experiences that solve real customer problems.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member-card">
+                        <div class="member-avatar">
+                            <div class="avatar-placeholder">👩‍🔬</div>
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Maria Patel</h4>
+                            <p class="member-role">Product Analyst</p>
+                            <p class="member-bio">Driving insights through data analysis and helping teams make informed product decisions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Careers Section -->
+        <section id="careers" class="careers-section">
+            <div class="container">
+                <div class="careers-content">
+                    <div class="careers-header">
+                        <div class="careers-badge">OPEN ROLES</div>
+                        <h3 class="section-title">Careers</h3>
+                        <p class="careers-description">
+                            Join us as we continue to accelerate the development of exceptional products.
+                        </p>
+                    </div>
+                    
+                    <div class="careers-cta">
+                        <div class="cta-text">
+                            <h4>The future of product excellence starts here</h4>
+                        </div>
+                        <div class="cta-buttons">
+                            <a href="#" class="btn-primary">View Open Positions →</a>
+                            <a href="/" class="btn-secondary">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-image"></div>
+                    <span>Product team</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="/#features">Features</a></li>
+                            <li><a href="/#roadmap">Roadmap</a></li>
+                            <li><a href="index.html#recent-updates">Updates</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#careers">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="https://doctoranywhere.atlassian.net/wiki/spaces/PD/overview" target="_blank">Documentation</a></li>
+                            <li><a href="https://doctoranywhere.atlassian.net/servicedesk/customer/portal/12" target="_blank">Support</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Product team. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
