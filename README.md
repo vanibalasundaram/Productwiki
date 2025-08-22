@@ -55,10 +55,13 @@ This website is built to match the exact Figma design specifications, featuring:
 ```
 Product wiki -cursor/
 ├── index.html          # Main HTML file with all sections
+├── about.html         # About Us page
+├── release.html       # Release Notes page
 ├── styles.css          # Complete CSS with Figma design system
 ├── script.js           # Interactive JavaScript functionality
 ├── sw.js              # Service Worker for offline support
 ├── manifest.json      # PWA manifest
+├── assets/            # Images and logo files
 └── README.md          # Project documentation
 ```
 
